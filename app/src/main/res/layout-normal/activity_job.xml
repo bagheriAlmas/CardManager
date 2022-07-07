@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/job_txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/yekan"
+                android:gravity="right|bottom"
+                android:text="کارت بانک سامان"
+                android:textColor="#707070"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/job_txtNumber"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-6dp"
+                android:fontFamily="@font/yekan"
+                android:gravity="right|top"
+                android:text="6037-7011-7898-6432"
+                android:textColor="#aeaeae"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:gravity="top">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/job_imgBank"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ico_saman"
+                app:civ_border="true"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d8d8d8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_style"
+            android:gravity="right"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/job_spinnerType"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/EditText_Height"
+                android:layout_gravity="center"
+                android:fontFamily="@font/yekan"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#b5b5b5"
+                android:textSize="@dimen/EditText_TextSize" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/job_cost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/EditText_Height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_style"
+                android:fontFamily="@font/yekan"
+                android:gravity="center"
+                android:hint="مبلغ"
+                android:inputType="number"
+                android:paddingLeft="@dimen/EditText_Padding"
+                android:paddingRight="@dimen/EditText_Padding"
+                android:singleLine="true"
+                android:textColor="#b5b5b5"
+                android:textColorHint="#b5b5b5"
+                android:textSize="@dimen/EditText_TextSize" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/job_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/EditText_Height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_style"
+                android:fontFamily="@font/yekan"
+                android:gravity="center"
+                android:hint="توضیحات"
+                android:paddingLeft="@dimen/EditText_Padding"
+                android:paddingRight="@dimen/EditText_Padding"
+                android:singleLine="true"
+                android:textColor="#b5b5b5"
+                android:textColorHint="#b5b5b5"
+                android:textSize="@dimen/EditText_TextSize" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/job_btnAdd"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EditText_Height"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/yekan"
+            android:text="ذخیره"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/EditText_TextSize" />
+
+
+    </LinearLayout>
+</LinearLayout>

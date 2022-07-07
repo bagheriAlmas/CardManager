@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/ViewMargin"
+    android:paddingLeft="@dimen/ViewMargin"
+    android:paddingRight="@dimen/ViewMargin"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_bg"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:layoutDirection="ltr"
+        android:padding="@dimen/ViewMargin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/card_txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/yekan"
+                    android:gravity="right|bottom"
+                    android:text="کارت بانک سامان"
+                    android:textColor="#707070"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/card_txtNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="-6dp"
+                    android:fontFamily="@font/yekan"
+                    android:gravity="right|top"
+                    android:text="6037-7011-7898-6432"
+                    android:textColor="#aeaeae"
+                    android:textSize="26dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="top">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/card_imgBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ico_saman"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/ViewMargin"
+            android:paddingRight="@dimen/ViewMargin">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/yekan"
+                android:gravity="center"
+                android:text="موجودی حساب"
+                android:textColor="#b5b5b5"
+                android:textSize="35dp" />
+
+
+            <TextView
+                android:id="@+id/card_txtMoney"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/EditText_Height"
+                android:fontFamily="@font/yekan"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="100,000,000 ریال"
+                android:textColor="#4d4d4d"
+                android:textSize="45dp" />
+
+            <Button
+                android:id="@+id/card_btnReceive_Spend"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/EditText_Height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_style"
+                android:fontFamily="@font/yekan"
+                android:text="واریز/برداشت"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/EditText_TextSize" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

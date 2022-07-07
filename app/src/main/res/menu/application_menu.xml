@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_profile"
+        android:title="اطلاعات کارت" />
+    <item
+        android:id="@+id/menu_editCard"
+        android:title="ویرایش کارت" />
+    <item
+        android:id="@+id/menu_addJob"
+        android:title="دریافت/پرداخت" />
+    <item
+        android:id="@+id/menu_report"
+        android:title="گزارشات کارت" />
+    <item
+        android:id="@+id/menu_delete"
+        android:title="حذف کارت" />
+</menu>

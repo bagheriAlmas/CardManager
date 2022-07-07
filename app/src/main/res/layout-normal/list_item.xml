@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:gravity="center|right"
+    android:layoutDirection="ltr"
+    android:layout_margin="5dp"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="96dp">
+
+        <TextView
+            android:textDirection="ltr"
+            android:fontFamily="@font/yekan"
+            android:id="@+id/list_item_txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="right|bottom"
+            android:text=" کارت بانک کشاورزی djfjdfjdfojisdfosijffsijfeo"
+            android:singleLine="true"
+            android:textColor="#707070"
+            android:layout_marginBottom="-3dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginTop="-4dp"
+            android:fontFamily="@font/yekan"
+            android:id="@+id/list_item_txtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:textColor="#aeaeae"
+            android:textSize="17dp"
+            android:gravity="right|top"
+            android:text="6037-7011-7898-6432" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="96dp"
+        android:layout_height="96dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/list_item_imgBank"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:civ_border="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:src="@drawable/ico_keshavarzi"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

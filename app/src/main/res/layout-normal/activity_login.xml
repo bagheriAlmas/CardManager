@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+
+    tools:context="ir.almasapps.almascardmanager.LoginActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/almas_typography_red" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ViewMargin"
+                android:layout_marginRight="@dimen/ViewMargin"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+                    android:background="@drawable/text_style"
+                    android:fontFamily="@font/yekan"
+                    android:gravity="center"
+                    android:hint="@string/prompt_username"
+                    android:paddingLeft="@dimen/EditText_Padding"
+                    android:paddingRight="@dimen/EditText_Padding"
+                    android:singleLine="true"
+                    android:textColor="#b5b5b5"
+                    android:textColorHint="#b5b5b5"
+                    android:textSize="@dimen/EditText_TextSize" />
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/text_style"
+                    android:fontFamily="@font/yekan"
+                    android:gravity="center"
+                    android:hint="@string/prompt_password"
+                    android:inputType="numberPassword"
+                    android:paddingLeft="@dimen/EditText_Padding"
+                    android:paddingRight="@dimen/EditText_Padding"
+                    android:singleLine="true"
+                    android:textColor="#b5b5b5"
+                    android:textColorHint="#b5b5b5"
+                    android:textSize="@dimen/EditText_TextSize" />
+
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button_style"
+                    android:fontFamily="@font/yekan"
+                    android:text="@string/action_sign_in"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/EditText_TextSize" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/ViewMargin"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:padding="@dimen/ViewMargin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_bg"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/linearImgBankSize"
+                android:layout_height="@dimen/linearImgBankSize"
+                android:gravity="center">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/editCard_imgBank"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="@dimen/imgBankBorder"
+                    android:layout_width="@dimen/imgBankSize"
+                    android:layout_height="@dimen/imgBankSize"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ico_unknow" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editCard_txtNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:hint="شماره کارت"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:textColor="#b5b5b5"
+                        android:textColorHint="#b5b5b5"
+                        android:textSize="@dimen/EditText_TextSize" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="نام کارت"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                    <EditText
+                        android:id="@+id/editCard_txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/EditText_Padding"
+                        android:paddingRight="@dimen/EditText_Padding"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="100,000,000,000,000"
+                        android:textColor="#aeaeae"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="موجودی"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                    <EditText
+                        android:paddingLeft="@dimen/EditText_Padding"
+                        android:paddingRight="@dimen/EditText_Padding"
+                        android:id="@+id/editCard_txtMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="100,000,000,000,000"
+                        android:inputType="number"
+                        android:textColor="#aeaeae"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/editCard_btnEdit"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/EditText_Height"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/button_style"
+                        android:fontFamily="@font/yekan"
+                        android:text="ویرایش"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/EditText_TextSize" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</LinearLayout>

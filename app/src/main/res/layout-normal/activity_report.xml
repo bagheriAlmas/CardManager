@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/report_txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/yekan"
+                android:gravity="right|bottom"
+                android:text="کارت بانک سامان"
+                android:textColor="#707070"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/report_txtNumber"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-6dp"
+                android:fontFamily="@font/yekan"
+                android:gravity="right|top"
+                android:text="6037-7011-7898-6432"
+                android:textColor="#aeaeae"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:gravity="top">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/report_imgBank"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ico_saman"
+                app:civ_border="true"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d8d8d8" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/EditText_Height"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/ViewMargin"
+        android:layout_marginRight="@dimen/ViewMargin"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/text_style"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/report_txtEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/yekan"
+            android:gravity="center"
+            android:hint="تا تاریخ "
+            android:textSize="@dimen/EditText_TextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dedede" />
+
+        <TextView
+            android:id="@+id/report_txtStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/yekan"
+            android:gravity="center"
+            android:hint="از تاریخ "
+            android:textSize="@dimen/EditText_TextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:buttonTint="@color/colorPrimary"
+                android:textSize="18dp"
+                android:fontFamily="@font/yekan"
+                android:id="@+id/report_radioReceive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="برداشت ها"
+                android:textColor="#b5b5b5"
+                android:layoutDirection="rtl"/>
+
+            <RadioButton
+                android:buttonTint="@color/colorPrimary"
+                android:textSize="18dp"
+                android:fontFamily="@font/yekan"
+                android:id="@+id/report_radioSpend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="واریز ها"
+                android:textColor="#b5b5b5"
+                android:layoutDirection="rtl"/>
+
+            <RadioButton
+
+                android:buttonTint="@color/colorPrimary"
+                android:textSize="18dp"
+                android:fontFamily="@font/yekan"
+                android:id="@+id/report_radioAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textColor="#b5b5b5"
+                android:text="همه" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/report_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

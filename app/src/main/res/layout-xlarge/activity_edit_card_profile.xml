@@ -1,0 +1,328 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="right"
+    android:layoutDirection="ltr"
+
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/ViewMargin"
+    android:paddingLeft="@dimen/ViewMargin"
+    android:paddingRight="@dimen/ViewMargin"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_bg"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:padding="@dimen/ViewMargin">
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/linearImgBankSize"
+                    android:layout_height="@dimen/linearImgBankSize"
+                    android:gravity="center">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/editCardProfile_imgBank"
+                        android:layout_width="@dimen/imgBankSize"
+                        android:layout_height="@dimen/imgBankSize"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ico_unknow"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="@dimen/imgBankBorder" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editCardProfile_txtNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:hint="شماره کارت"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:textColor="#b5b5b5"
+                        android:textColorHint="#b5b5b5"
+                        android:textSize="@dimen/EditText_TextSize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="نام کارت"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                    <EditText
+                        android:id="@+id/editCardProfile_txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/EditText_Padding"
+                        android:paddingRight="@dimen/EditText_Padding"
+                        android:singleLine="true"
+                        android:text="100,000,000,000,000"
+                        android:textColor="#aeaeae"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="موجودی کارت"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                    <EditText
+                        android:id="@+id/editCardProfile_txtMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/EditText_Padding"
+                        android:paddingRight="@dimen/EditText_Padding"
+                        android:singleLine="true"
+                        android:text="100,000,000,000,000"
+                        android:textColor="#aeaeae"
+                        android:textSize="@dimen/TextView_TextSize" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="رمز کارت"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                    <EditText
+                        android:id="@+id/editCardProfile_txtpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/EditText_Padding"
+                        android:paddingRight="@dimen/EditText_Padding"
+                        android:singleLine="true"
+                        android:text="100,000,000,000,000"
+                        android:textColor="#aeaeae"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="رمز دوم"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                    <EditText
+                        android:id="@+id/editCardProfile_txtpassword2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/EditText_Padding"
+                        android:paddingRight="@dimen/EditText_Padding"
+                        android:singleLine="true"
+                        android:text="100,000,000,000,000"
+                        android:textColor="#aeaeae"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="CVV2"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                    <EditText
+                        android:id="@+id/editCardProfile_txtcvv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/EditText_Padding"
+                        android:paddingRight="@dimen/EditText_Padding"
+                        android:singleLine="true"
+                        android:text="100,000,000,000,000"
+                        android:textColor="#aeaeae"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/editCardProfile_layout_txtExpireDate"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditText_Height"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/text_style"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/yekan"
+                        android:text="تاریخ انقضا"
+                        android:textColor="#464646"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                    <TextView
+                        android:id="@+id/editCardProfile_txtExpireDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/yekan"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="100,000,000,000,000"
+                        android:textColor="#aeaeae"
+                        android:textSize="@dimen/TextView_TextSize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/editCardProfile_btnSave"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/EditText_Height"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/button_style"
+                        android:fontFamily="@font/yekan"
+                        android:text="ذخیره"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/EditText_TextSize" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
